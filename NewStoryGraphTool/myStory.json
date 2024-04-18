@@ -1,0 +1,155 @@
+{
+  "Title": "Campus Life on the West Side",
+  "Credits": "",
+  "InitialLocation": "Kresge",
+  "Locations": {
+    "Kresge": {
+      "Body": "This is Kresge College, lots of nice trees . Now it's time for you to help the professor prepare for the afternoon experiment!",
+      "Choices": [
+        {
+          "Text": "South",
+          "Target": "Porter"
+        },
+        {
+          "Text": "East",
+          "condition": "key",
+          "Target": "Laboratory"
+        },
+        {
+          "Text": "North",
+          "Target": "Rachel Carson"
+        },
+        {
+          "Text": "West",
+          "Target": "Playground"
+        }
+      ]
+    },
+    "Laboratory": {
+      "Body": "Let's start preparing for the afternoon experiment!"
+    },
+    "Playground": {
+      "Body": "This is the playground, This place is very suitable for us to exercise our bodies.!",
+      "Choices": [
+        {
+          "Text": "East",
+          "Target": "Kresge"
+        }
+      ]
+    },
+    "Rachel Carson": {
+      "Body": "Rachel Carson College, more sun and fewer trees.",
+      "Choices": [
+        {
+          "Text": "South",
+          "Target": "Kresge"
+        },
+        {
+          "Text": "West",
+          "Target": "Lost And Found Office"
+        }
+      ]
+    },
+    "Lost And Found Office": {
+      "Body": "This is the lost and found office .Do you have any lost items!",
+      "Choices": [
+        {
+          "Text": "East",
+          "Target": "Rachel Carson"
+        }
+      ],
+      "goods": [
+        {
+          "name": "key",
+          "options": [
+            {
+              "label": "key",
+              "message": "Congratulations on finding the key！Let's go to the laboratory now！",
+              "value": "Obtain"
+            }
+          ]
+        }
+      ]
+    },
+    "Porter": {
+      "Body": "This is Porter College, the trees are nice here too.",
+      "Choices": [
+        {
+          "Text": "North",
+          "Target": "Kresge"
+        },
+        {
+          "Text": "South",
+          "Target": "Student Dormitory"
+        },
+        {
+          "Text": "East",
+          "Target": "Teaching Buildling"
+        },
+        {
+          "Text": "West",
+          "Target": "Library"
+        }
+      ]
+    },
+    "Library": {
+      "Body": "This is the library, the books are so many here.",
+      "Choices": [
+        {
+          "Text": "East",
+          "Target": "Porter"
+        }
+      ]
+    },
+    "Teaching Buildling": {
+      "Body": "This is the teaching building. We need to study seriously!",
+      "Choices": [
+        {
+          "Text": "West",
+          "Target": "Porter"
+        }
+      ]
+    },
+    "Student Dormitory": {
+      "Body": "Let's rest well in the dormitory!",
+      "Choices": [
+        {
+          "Text": "North",
+          "Target": "Porter"
+        }
+      ],
+      "goods": [
+        {
+          "name": "radio",
+          "options": [
+            {
+              "label": "radio",
+              "message": "Someone found a key on the playground and placed it at the lost and found office. Please ask the person who lost the key to collect it at the lost and found office.",
+              "value": "on"
+            },
+            {
+              "label": "radio",
+              "message": "You turned off the radio.",
+              "value": "off"
+            }
+          ]
+        },
+        {
+          "name": "bed",
+          "options": [
+            {
+              "label": "bed",
+              "message": "You are lying down in your bed.",
+              "value": "lie down"
+            },
+            {
+              "label": "bed",
+              "message": "You are getting up from your bed.",
+              "value": "get up"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
