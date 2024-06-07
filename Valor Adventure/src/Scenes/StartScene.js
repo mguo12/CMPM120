@@ -165,15 +165,15 @@ export default class Start extends Phaser.Scene {
         // create dinosaur
         this.dinosaurList = []
         let dinosaurLocation = [
-            //{ x: 300, y: 388 },
-            //{ x: 700, y: 270 },
-            //{ x: 1000, y: 500 },
-            //{ x: 1700, y: 100 },
-            //{ x: 2300, y: 300 },
+            { x: 300, y: 388 },
+            { x: 700, y: 270 },
+            { x: 1000, y: 500 },
+            { x: 1700, y: 100 },
+            { x: 2300, y: 300 },
                     // { x: 2900, y: 500 },
-            //{ x: 3100, y: 200 },
-            //{ x: 3700, y: 300 },
-            //{ x: 4000, y: 200 },
+            { x: 3100, y: 200 },
+            { x: 3700, y: 300 },
+            { x: 4000, y: 200 },
         ]
         dinosaurLocation.forEach(location => {
             let dinosaur = this.physics.add.sprite(location.x, location.y, 'dinosaur', 0);
